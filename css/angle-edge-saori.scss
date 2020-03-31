@@ -1,0 +1,17 @@
+@import "angled-edges";
+
+
+.angle_container {
+	width: 100%;
+	margin: 0 auto;
+}
+ 
+
+.angle-above.c_blue{@include angled-edge("outside top", "upper left", #004098);}
+.angle-above.c_pink{@include angled-edge("outside top", "upper left", #df7395);}
+.angle-above.c_white{@include angled-edge("outside top", "upper left", #ffffff);}
+
+.angle-bottom.c_blue{@include angled-edge("outside bottom", "lower right", #004098);}
+.angle-bottom.c_pink{@include angled-edge("outside bottom", "lower right", #df7395);}
+.angle-bottom.c_white{@include angled-edge("outside bottom", "lower right", #ffffff);}
+

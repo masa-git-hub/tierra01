@@ -1,0 +1,259 @@
+/******************************************************************
+Theme Name: tierra_01
+Theme URI: 
+Description: 
+Author: MASAtoshi OKA
+Author URI: 
+Version: 1.0
+******************************************************************/
+
+
+.sticky {}          /* DO NOT EDIT THIS */
+.gallery-caption {} /* THESE ARE USELESS */
+.bypostauthor {}    /* THEY ARE ONLY TO KEEP THEME CHECK HAPPY */
+
+
+
+/*+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+
++-----+// Body
+--+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+*/
+
+html{min-width:320px!important; height: 100%;}
+body{text-align:left;height:100%;box-sizing:border-box;color:#1a1a1a;background:#fff;min-width:320px!important; min-height: 100%}
+
+h1,h2,h3,h4,h5,h6,p,li,dt,dd,form,pre,td,th,label,div{font-size:.8125rem;line-height:1;}
+
+div p,div li,div dt,div dd,div form,div pre,div td,div th,div label,
+div div,div h1,div h2,div h3,div h4,div h5,div h6,
+p p,p li,p dt,p dd,p from,p pre, p td,p th,p label,p div,
+li p,li li,li dt,li dd,li from,li pre,li td,p th,li label,li div,li h3,
+td p,td li,td dt,td dd,td from,td pre,td td,td th,td label,td div,
+th p,th li,th dt,th dd,th from,th pre,th td,th th,th label,th div,
+label p,label li,label dt,label dd,label form,label pre,label td,label th,label div,
+form th,form td{
+	font-size:100%;
+}
+
+a{overflow:hidden;}
+a:link{color:#df7395;text-decoration:none;}
+a:visited{color:#df7395;text-decoration:none;}
+a:hover{color:#df7395;text-decoration:none;}
+a:active{color:#df7395;text-decoration:none;}
+
+a:hover img{
+opacity:0.7;
+filter: alpha(opacity=70);
+-ms-filter: "alpha( opacity=70 )";
+}
+
+body,h1,h2,h3,h4,h5,h6,td,th,p,div,input,textarea,pre,ul,li,ol{
+	font-family: 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
+	font-weight:300;
+	color: #555;
+}
+
+* html body *{
+	vertical-align:baseline;
+}
+
+button{  text-transform: none;  cursor: pointer;  overflow: visible;}
+
+/*+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+
++-----+// animation
+--+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+*/
+
+.flash{animation: flash 3s ease infinite alternate;}
+@keyframes flash {
+  50% {
+    opacity: 0;
+  }
+}
+
+/*+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+
++-----+// header
+--+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+*/
+.header{background:#004098; margin: 0 !important;}
+
+
+/*+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+
++-----+// section
+--+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+*/
+
+.wrap.w100 {
+  width: 100%;
+  margin: 0; 
+}
+.section{
+	width:100%; 
+	display: block;
+	float: none;
+	padding: 0;
+	margin: 0;
+}
+
+.section.c_pink {background:#df7395;}
+.section.c_blue{background:#004098;}
+.section.c_white{background:#fff;}
+
+
+/*Angle Edges*/
+@import "angled-edges";
+.angle_container {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.angle-above.outside.c_blue{@include angled-edge("outside top", "upper left", #004098);}
+.angle-above.inside.c_blue{@include angled-edge("inside top", "lower right", #004098);}
+.angle-above.outside.c_pink{@include angled-edge("outside top", "upper left", #df7395);}
+.angle-above.inside.c_pink{@include angled-edge("inside top", "lower right", #df7395);}
+.angle-above.outside.c_white{@include angled-edge("outside top", "upper left", #ffffff);}
+.angle-above.inside.c_white{@include angled-edge("inside top", "lower right", #ffffff);}
+
+.angle-bottom.outside.c_blue{@include angled-edge("outside bottom", "lower right", #004098);}
+.angle-bottom.inside.c_blue{@include angled-edge("inside bottom", "upper left", #004098);}
+.angle-bottom.outside.c_pink{@include angled-edge("outside bottom", "lower right", #df7395);}
+.angle-bottom.inside.c_pink{@include angled-edge("inside bottom", "upper left", #df7395);}
+.angle-bottom.outside.c_white{@include angled-edge("outside bottom", "lower right", #ffffff);}
+.angle-bottom.inside.c_white{@include angled-edge("inside bottom", "upper left", #ffffff);}
+
+
+/*+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+
++-----+// footer
+--+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+*/
+
+.footer{background-color:#df7395 !important;}
+
+/* ==========================================================================
+toPageTop
+========================================================================== */
+/* toPageTop */
+#footer .toPageTop {
+  display: none;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 3px;
+  a{
+	  display: block;
+	  background-color: #999791;
+	  color: #fff;
+	  text-indent: -9999px;
+	  z-index: 2;
+	  position: relative;
+  }
+  a:before {
+	  content: "";
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  width: 18px;
+	  height: 18px;
+	  margin: -8px 0 0 -18px;
+	  border-right: #fff 1px solid;
+	}
+	a:after {
+	  content: "";
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  width: 12px;
+	  height: 12px;
+	  margin: -6px 0 0 -6px;
+	  border-right: #fff 1px solid;
+	  border-top: #fff 1px solid;
+	  transform: rotate(-45deg);
+	}
+
+}
+
+/*+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+
++-----+// HOME
+--+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+*/
+
+ul.home_slide{
+	width: 100%;
+	list-style: none !important;
+	background: #444;
+	margin: 0; 
+	padding: 0;
+	overflow: hidden;
+	position: relative;
+	li{
+		margin: 0 !important ;
+		padding: 0 !important;
+		img{width:100%; height: auto; clear: none;}
+	}
+}
+
+.prev-arrow, .next-arrow{
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 80px; 
+  height: 80px;
+  padding: 0;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  cursor: pointer;
+  border: none;
+  background: none;
+  z-index: 9000;
+  opacity: 0.7;
+}
+.prev-arrow{
+  left: 10px;
+  background: url(library/js/slick/slick_arrow_prev.png) 0 0 no-repeat;
+  background-size: contain;
+}
+.next-arrow{
+  right: 10px;
+  background: url(library/js/slick/slick_arrow_next.png) 0 0 no-repeat;
+  background-size: contain;
+}
+
+.prev-arrow:hover,.next-arrow:hover {opacity: 1}
+
+.slick-dots li{
+	 width: 10px!important; 
+    height: 10px!important; 
+    margin: 0 5px!important; 
+}
+.slick-dots li button{
+	width: 10px !important; 
+	height: 10px !important;
+	padding: 5px!important; 
+}
+
+.profile_area{
+	h2{font-size: 2em;}
+	table{width: 100%;
+		td{
+			padding: 10px; 
+			vertical-align: top;
+			font-size: 1.2em;
+		}
+		td.profile_year{
+			font-weight: 600; 
+			width: 100px;
+			padding-top: 20px;
+			font-size: 1.2em;
+			}
+	}
+	ul{list-style: disc;
+		padding: 0;
+		margin: 0;
+		li{font-size: 1.1em;
+			padding: 0px 0 20px 0px;
+			line-height: 160%;
+		li.last-child{padding-bottom: 0;}
+		}
+	}	
+}
