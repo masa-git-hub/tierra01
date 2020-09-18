@@ -48,7 +48,7 @@
 			<header class="header angle_container" role="banner">
 
 				<div id="inner-header" class="wrap cf">
-					<p id="logo" class="h1"><a href="<?php echo home_url(); ?>" rel="nofollow">Tierra</a></p>
+					<p id="logo" class="h1"><a href="<?php echo home_url(); ?>" rel="nofollow">Tierra.ltd</a></p>
 					<nav role="navigation">
 						<?php wp_nav_menu(array(
     					         'container' => false,                           // remove nav container
