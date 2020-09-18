@@ -41,8 +41,6 @@
 				</footer>
 			</article>
 			<?php endif; ?>
-			
-			
 		</main>
 	</div>
 	
