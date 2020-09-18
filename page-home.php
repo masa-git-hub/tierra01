@@ -6,7 +6,6 @@
 
 <?php get_header(); ?>
 
-
 <div id="content">
 	<div class="section angle_container">
 		<div id="inner-content" class="wrap w100 cf">
@@ -21,7 +20,6 @@
 				<?php endwhile; ?>
 			</ul>
 		</div>
-
 	</div>
 	
 	<div class="section angle_container">
