@@ -44,9 +44,7 @@
 	<body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">
 
 		<div id="container">
-
 			<header class="header angle_container" role="banner">
-
 				<div id="inner-header" class="wrap cf">
 					<p id="logo" class="h1"><a href="<?php echo home_url(); ?>" rel="nofollow">Tierra.ltd</a></p>
 					<nav role="navigation">
